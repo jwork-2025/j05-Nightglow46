@@ -1,5 +1,9 @@
 package com.gameengine.core;
 
+/**
+ * 组件基类，使用泛型设计
+ * @param <T> 组件类型
+ */
 public abstract class Component<T extends Component<T>> {
     protected GameObject owner;
     protected boolean enabled;
@@ -10,22 +14,38 @@ public abstract class Component<T extends Component<T>> {
         this.name = this.getClass().getSimpleName();
     }
     
+    /**
+     * 初始化组件
+     */
     public abstract void initialize();
     
-    public void update(float deltaTime) {
-    }
+    /**
+     * 更新组件
+     * @param deltaTime 时间间隔
+     */
+    public abstract void update(float deltaTime);
     
+    /**
+     * 渲染组件
+     */
     public abstract void render();
     
+    /**
+     * 销毁组件
+     */
     public void destroy() {
         this.enabled = false;
     }
     
+    /**
+     * 获取组件类型
+     */
     @SuppressWarnings("unchecked")
     public Class<T> getComponentType() {
         return (Class<T>) this.getClass();
     }
     
+    // Getters and Setters
     public GameObject getOwner() {
         return owner;
     }

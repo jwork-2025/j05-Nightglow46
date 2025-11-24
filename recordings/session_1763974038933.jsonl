@@ -1,0 +1,17 @@
+{"type":"header","version":1,"w":800,"h":600}
+{"type":"keyframe","t":0.51,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":1.01,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":1.52,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":2.03,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":157.81,"y":207.85,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":2.54,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":171.7,"y":213.13,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":3.05,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":185.67,"y":218.45,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":3.55,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":199.28,"y":223.63,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":4.07,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":213.28,"y":228.96,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]},{"id":"Bullet","x":239.25,"y":264.16,"rt":"CUSTOM"},{"id":"Enemy","x":316.23,"y":121.33,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":4.58,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":322.53,"y":134.76,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]},{"id":"Bullet","x":54.62,"y":223,"rt":"CUSTOM"},{"id":"Bullet","x":193.06,"y":232.75,"rt":"CUSTOM"},{"id":"Bullet","x":350.26,"y":236.44,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":5.08,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":328.8,"y":148.12,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]},{"id":"Bullet","x":336.57,"y":65.96,"rt":"CUSTOM"},{"id":"Bullet","x":371.54,"y":195,"rt":"CUSTOM"},{"id":"Bullet","x":395.02,"y":287.32,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":5.59,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Bullet","x":290.76,"y":21.69,"rt":"CUSTOM"},{"id":"Bullet","x":323.72,"y":139.66,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":6.11,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Bullet","x":581.72,"y":9.25,"rt":"CUSTOM"},{"id":"Bullet","x":513.78,"y":201.06,"rt":"CUSTOM"},{"id":"Enemy","x":230.77,"y":305.95,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":6.62,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":245.62,"y":305.43,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]},{"id":"Bullet","x":315.85,"y":346.52,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":7.13,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Bullet","x":48.71,"y":397.46,"rt":"CUSTOM"},{"id":"Bullet","x":251.75,"y":317.79,"rt":"CUSTOM"},{"id":"Bullet","x":358.59,"y":304.97,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":7.63,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Bullet","x":116.46,"y":353.02,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":7.74,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Bullet","x":10.21,"y":372.89,"rt":"CUSTOM"}]}

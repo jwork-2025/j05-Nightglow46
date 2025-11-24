@@ -1,11 +1,15 @@
 package com.gameengine.components;
 
 import com.gameengine.core.Component;
-import com.gameengine.graphics.IRenderer;
+import com.gameengine.core.GameObject;
+import com.gameengine.graphics.Renderer;
 import com.gameengine.math.Vector2;
 
+/**
+ * 渲染组件，负责对象的渲染
+ */
 public class RenderComponent extends Component<RenderComponent> {
-    private IRenderer renderer;
+    private Renderer renderer;
     private RenderType renderType;
     private Vector2 size;
     private Color color;
@@ -48,6 +52,16 @@ public class RenderComponent extends Component<RenderComponent> {
     
     @Override
     public void initialize() {
+        // 获取渲染器引用
+        if (owner != null) {
+            // 这里需要从游戏引擎获取渲染器
+            // 在实际实现中，可以通过依赖注入或其他方式获取
+        }
+    }
+    
+    @Override
+    public void update(float deltaTime) {
+        // 渲染组件通常不需要每帧更新
     }
     
     @Override
@@ -80,26 +94,42 @@ public class RenderComponent extends Component<RenderComponent> {
         }
     }
     
-    public void setRenderer(IRenderer renderer) {
+    /**
+     * 设置渲染器
+     */
+    public void setRenderer(Renderer renderer) {
         this.renderer = renderer;
     }
     
+    /**
+     * 设置颜色
+     */
     public void setColor(Color color) {
         this.color = color;
     }
     
+    /**
+     * 设置颜色
+     */
     public void setColor(float r, float g, float b, float a) {
         this.color = new Color(r, g, b, a);
     }
     
+    /**
+     * 设置大小
+     */
     public void setSize(Vector2 size) {
         this.size = new Vector2(size);
     }
     
+    /**
+     * 设置可见性
+     */
     public void setVisible(boolean visible) {
         this.visible = visible;
     }
     
+    // Getters
     public RenderType getRenderType() {
         return renderType;
     }

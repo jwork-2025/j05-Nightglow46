@@ -56,5 +56,3 @@ public class FileRecordingStorage implements RecordingStorage {
         return new ArrayList<>(Arrays.asList(files));
     }
 }
-
-

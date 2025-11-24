@@ -12,5 +12,3 @@ public interface RecordingStorage {
     Iterable<String> readLines(String path) throws IOException;
     List<File> listRecordings();
 }
-
-

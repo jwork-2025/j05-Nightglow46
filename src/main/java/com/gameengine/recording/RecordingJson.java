@@ -12,11 +12,28 @@ public final class RecordingJson {
         int c = json.indexOf(':', i);
         if (c < 0) return null;
         int end = c + 1;
-        int comma = json.indexOf(',', end);
-        int brace = json.indexOf('}', end);
-        int j = (comma < 0) ? brace : (brace < 0 ? comma : Math.min(comma, brace));
-        if (j < 0) j = json.length();
-        return json.substring(end, j).trim();
+        
+        // Find the end of the value, respecting nested structures
+        int depth = 0;
+        boolean inQuote = false;
+        for (int k = end; k < json.length(); k++) {
+            char ch = json.charAt(k);
+            if (ch == '"' && (k == 0 || json.charAt(k-1) != '\\')) {
+                inQuote = !inQuote;
+            } else if (!inQuote) {
+                if (ch == '{' || ch == '[') {
+                    depth++;
+                } else if (ch == '}' || ch == ']') {
+                    if (depth == 0) {
+                        return json.substring(end, k).trim();
+                    }
+                    depth--;
+                } else if (ch == ',' && depth == 0) {
+                    return json.substring(end, k).trim();
+                }
+            }
+        }
+        return json.substring(end).trim();
     }
 
     public static String stripQuotes(String s) {
@@ -38,8 +55,8 @@ public final class RecordingJson {
         int depth = 0; int start = 0;
         for (int i = 0; i < arr.length(); i++) {
             char ch = arr.charAt(i);
-            if (ch == '{') depth++;
-            else if (ch == '}') depth--;
+            if (ch == '{' || ch == '[') depth++;
+            else if (ch == '}' || ch == ']') depth--;
             else if (ch == ',' && depth == 0) {
                 out.add(arr.substring(start, i));
                 start = i + 1;
@@ -69,5 +86,3 @@ public final class RecordingJson {
         return "";
     }
 }
-
-

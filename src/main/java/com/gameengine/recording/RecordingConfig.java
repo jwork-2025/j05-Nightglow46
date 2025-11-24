@@ -12,5 +12,3 @@ public class RecordingConfig {
         this.outputPath = outputPath;
     }
 }
-
-

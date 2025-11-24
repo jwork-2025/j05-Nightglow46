@@ -1,0 +1,13 @@
+{"type":"header","version":1,"w":800,"h":600}
+{"type":"input","t":0.02,"keys":[10]}
+{"type":"keyframe","t":0.51,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":1.02,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":1.53,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"}]}
+{"type":"keyframe","t":2.04,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":25.93,"y":25.68,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":2.55,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":37.94,"y":34.5,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":3.05,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":49.69,"y":43.11,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":3.56,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":61.59,"y":51.83,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"keyframe","t":4.07,"score":2,"hp":5,"entities":[{"id":"Player","x":400,"y":300,"rt":"CUSTOM"},{"id":"Enemy","x":73.53,"y":60.59,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]},{"id":"Enemy","x":487.6,"y":79.99,"rt":"RECTANGLE","w":20,"h":20,"color":[1,0.5,0,1]}]}
+{"type":"input","t":4.59,"keys":[27]}
+{"type":"input","t":6.52,"keys":[40]}
+{"type":"input","t":6.72,"keys":[40]}
