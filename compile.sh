@@ -7,20 +7,10 @@ echo "编译游戏引擎..."
 mkdir -p build/classes
 
 # 编译所有Java文件
-javac -d build/classes \
-    -cp . \
-    src/main/java/com/gameengine/math/Vector2.java \
-    src/main/java/com/gameengine/input/InputManager.java \
-    src/main/java/com/gameengine/core/Component.java \
-    src/main/java/com/gameengine/core/GameObject.java \
-    src/main/java/com/gameengine/components/TransformComponent.java \
-    src/main/java/com/gameengine/components/PhysicsComponent.java \
-    src/main/java/com/gameengine/components/RenderComponent.java \
-    src/main/java/com/gameengine/graphics/Renderer.java \
-    src/main/java/com/gameengine/core/GameEngine.java \
-    src/main/java/com/gameengine/core/GameLogic.java \
-    src/main/java/com/gameengine/scene/Scene.java \
-    src/main/java/com/gameengine/example/GameExample.java
+# 自动查找所有Java文件进行编译
+find src/main/java -name "*.java" > sources.txt
+javac -d build/classes -cp . @sources.txt
+rm sources.txt
 
 if [ $? -eq 0 ]; then
     echo "编译成功！"

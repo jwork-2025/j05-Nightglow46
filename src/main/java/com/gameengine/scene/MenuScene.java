@@ -55,7 +55,6 @@ public class MenuScene extends Scene {
                 break;
             case 2: // Replay
                 engine.disableRecording();
-                // Use ReplayScene for file selection, but then launch GameScene in replay mode
                 engine.setScene(new com.gameengine.example.ReplayScene(engine, null));
                 break;
             case 3: // Exit
@@ -95,6 +94,6 @@ public class MenuScene extends Scene {
             renderer.drawText(options[i], 300, startY + i * 50, 30, r, g, b, 1);
         }
         
-        renderer.drawText("game", 350, 100, 40, 0, 1, 1, 1);
+        renderer.drawText("J03 Game - Nightglow46", 250, 100, 40, 0, 1, 1, 1);
     }
 }
