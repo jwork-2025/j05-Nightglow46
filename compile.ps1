@@ -10,10 +10,8 @@ $javaFiles = Get-ChildItem -Path "src/main/java" -Recurse -Filter "*.java" | Sel
 
 # 编译
 if ($javaFiles) {
-    # 使用文件列表文件来避免命令行过长的问题
-    $javaFiles | Out-File -Encoding utf8 "sources.txt"
-    
-    javac -d build/classes -cp . @sources.txt
+    # 直接编译
+    javac -d build/classes -cp . $javaFiles
     
     if ($LASTEXITCODE -eq 0) {
         Write-Host "编译成功！"
